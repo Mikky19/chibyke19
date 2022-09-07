@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       * {
+        box-sizing:border-box ;
+       }
+       body{
+            background-color: blue;
+            width:100%;
+            align-content: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container {
+            background-color: white;
+            width: 90%;
+            height: 200vh;
+            margin-bottom: 1vw;
+            margin-left: 4.5vw;
+            margin-top: 1vw;
+            font-size: 1.5em;
+            box-shadow: rgb(0, 0, 0 o.5);
+            display: flex;
+            flex-wrap: wrap;
+            flex-flow: column;
+            justify-content: flex-start;
+            align-items: center;
+            justify-content: space-between;
+        }
+        #header{
+            background-color: white;
+            width: 90%;
+            height: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-around;
+        }
+        #pic{
+            background-color: aqua;
+            width: 100%;
+            height: 30%;
+            margin: 0px;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+        }
+        img {
+            justify-items: center;
+            border-radius: 50%;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-between;
+        }
+
+        
+        #section {
+            float: left;
+            background-color: white;
+            width: 90%;
+            height: 50%;
+            align-items: center;
+            justify-items: center;
+            text-justify: auto;
+        
+        }
+
+        #lee {
+            font-size: 1rem;
+        }
+        #mee{
+            font-size: 1rem;
+            
+        }
+         h3 {
+            line-height: 0%;
+        }
+        #p {
+            line-height: 0%;
+            font-size: 1rem;
+        }
+
+        #footer {
+            background-color: aquamarine;
+            width: 100%;
+            height: 17%;
+            margin: 0px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            text-align:center;
+        }
+        #logo {
+            width: 45%;
+            height: auto;
+            text-align: left;
+            font-size: 2em;
+        }
+        #nav {
+            width: 45%;
+            height: auto;
+            text-align: right;
+            font-size: 1em;
+        }   
+        #secnav{
+            width:25%;
+            height:auto;
+            float: right;
+            background-color: rgb(245, 212, 29);
+            padding: 10px;
+        }
+        #sectionsec {
+            width: 65%;
+            
+        }
+        #u {
+            background-color: red;
+            color: white;
+            box-shadow: rgb(0, 0, 0 o.5) ;
+            text-align: left;
+            align-items:left ;
+            margin-top: 0%;
+        }
+        
+    </style>
+
+</head>
+<body>
+    <div class ="container">
+        <div id ="header">
+            <div id="logo">
+                My Awesome Blog
+            </div>
+            <div id="nav">
+                <a href="#">Home</a>|
+                <a href="#">About</a>
+            </div>
+        </div>
+        <div id ="pic">
+         <center><img src="img-20211223-wa0014.jpg" alt="mikky pic" width="400px" height="400px"></center>
+        </div>
+        <div id ="section">
+            <div id="secnav">
+                <h4 id="u">useful links</h4>
+                <ul>
+                    <li><a href="#">google</a></li>
+                    <li><a href="#">facebook</a></li>
+                </ul>
+            </div>
+            <div id="sectionsec">
+                <div>
+                <h3><a href="#">Title of the first blog</a></h3>
+                <p id="p">by mikky</p><br>
+                <p id="lee">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum eligendi fuga quae ab, magni inventore earum iste placeat ut rerum ea! Architecto, officia ducimus similique soluta expedita repellendus nobis tempore laborum modi placeat eius iste rem illo commodi qui laudantium doloribus fuga quidem cum quam, accusantium mollitia eum quasi. Doloribus sit, molestias veniam corrupti omnis tenetur illo vero. Omnis ad ipsum nostrum architecto aut distinctio ex ratione deserunt similique molestias suscipit a dolorem voluptate ipsam, mollitia dolor rem reiciendis animi, nihil accusantium explicabo eveniet, assumenda excepturi id. Quo, rem officia nobis iste, corrupti nemo reprehenderit facilis, nostrum explicabo consequuntur eaque.</p>
+            <hr>
+           <h3><a href="#">Title of the first blog</a></h3>
+                <p id="p">by mikky</p><br>
+                <p id="mee">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum eligendi fuga quae ab, magni inventore earum iste placeat ut rerum ea! Architecto, officia ducimus similique soluta expedita repellendus nobis tempore laborum modi placeat eius iste rem illo commodi qui laudantium doloribus fuga quidem cum quam, accusantium mollitia eum quasi. Doloribus sit, molestias veniam corrupti omnis tenetur illo vero. Omnis ad ipsum nostrum architecto aut distinctio ex ratione deserunt similique molestias suscipit a dolorem voluptate ipsam, mollitia dolor rem reiciendis animi, nihil accusantium explicabo eveniet, assumenda excepturi id. Quo, rem officia nobis iste, corrupti nemo reprehenderit facilis, nostrum explicabo consequuntur eaque.</p>
+            </div>
+        
+        </div>
+
+        
+        <div id="footer">
+            <div>
+            <button><a href="#">contact us</a></button>
+           <button><a href="#">about us</a></button>
+        </div>
+    </div>
+</body>
+</html>
