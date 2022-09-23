@@ -4,19 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login page</title>
+    <title>Document</title>
     <style>
-        body {
+      body {
             padding: 0;
             margin:0;
-            background: #f0f2f5;
+            background: white;
             font-family: Arial, sans-serif;
 
+        }
+        .container{
+            width: 100%;
+            height: 100vh;
+            background: #f0f2f5;
+            margin: 0px 0px 60px;
         }
         .box {
             display: flex;
             flex-flow: column;
-            justify-content:0 center;
+            justify-content:center;
             align-items: center;
             width: 100%;
             height: 100vh;
@@ -25,13 +31,24 @@
         .title-box {
             margin-bottom: 40px;
         }
-        .form-box {
-            width: 350px;
+
+        .form-wrap {
+            width: 450px;
             padding: 15px;
             text-align: center;
             border-radius: 5px;
             background: #fff;
             box-shadow: 0px 2px 10px 1px rgba(71,71,71, 0.5); 
+            justify-content: center;
+            text-align: left;
+    
+        }
+        .form-wrap h3 hr{
+            margin: 0px 0px 15px;
+            margin-bottom: 35px; 
+        }
+        .form-wrap h4  {
+            font-weight: 100;
         }
         .form-box input{
             width: 100%;
@@ -46,7 +63,7 @@
         .form-box input:focus {
             box-shadow: 0px 0px 1px 1px rgb(22,111,229);
         }
-        .form-box button {
+        .form-box input .submit {
             width: 100%;
             margin-bottom:15px;
             color:#fff;
@@ -103,30 +120,41 @@
         }
         .form-box #create-button a:hover {
             background: #42b72a;
-        }
+        }  
+        .submit{
+               width: 70px;
+               height: 30px;
+               background:#166fe5;
+               border-radius: 5px;
+               color: white;
+               font-size: 15px;
+               font-weight: bold;
+               border: none;
+               margin-left: ;
+               margin-top: 10px;
+               float: right;
+               margin-right: 8%;
+            }
+            .submit:hover{
+               opacity: 60%;
+            }
     </style>
-    </head>
+</head>
 <body>
-   <div class="box">
-       <div class="title-box">
-            <img src="facebook.jpg" alt="facebook" width="200px">
-       </div>
-       <div class="form-box">
-        <p>Log in to Facebook</p>
-        <form action="">
-            <input type="text" placeholder="Email address or phone number">
-            <input type="password" placeholder="Password">
-            <button type="submit">Log In</button>
-            <a href="forgotpass.html">forgotten password</a>
-            <div id="line">
-                <p>or</p>
+<div class="container">
+    <div class="box">
+        <form action="#" method="post" class="form-wrap">
+            <h3>Find your Account</h3>
+            <hr>
+            <h4>Please enter your email address or mobile number to search for your account. </h4>
+            <div class="form-box">
+                <input type="text" placeholder="Email address or mobile number">
             </div>
-            <div id=create-button >
-                <a href="facebook3.html">Create New Account</a>
+            <div class="form-submit">
+                <input type="submit" value="search" class="submit">
             </div>
         </form>
-
-       </div>
-   </div>
+      </div> 
+</div> 
 </body>
 </html>
